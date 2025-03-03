@@ -1,9 +1,16 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Link from 'next/link'
+import Overlay from './Overlay';
 
 const Navbar = () => {
+    const [overlay, setOverlay] = useState(false);
+    const sidebar = () => {
+        setOverlay(!overlay);
+    };
   return (
-    <div className='flex justify-between text-gray-400 px-8 py-8 min-w-[380px] sm:min-w-2xl'>
+    <>
+    <div className='flex justify-between text-gray-400 sm:px-8 sm:py-8 px-5 py-5 min-w-[350px] sm:min-w-2xl'>
         <div>
             <span className='font-semibold text-xl'>BAINS</span>
         </div>
@@ -16,9 +23,11 @@ const Navbar = () => {
             </Link>
         </div>
         <div className='sm:hidden'>
-            Icon
+            <button onClick={sidebar}>Icon</button>
         </div>
     </div>
+    {overlay && (<Overlay />)}
+    </>
   )
 }
 
