@@ -10,7 +10,7 @@ const Navbar = () => {
     };
   return (
     <>
-    <div className='flex justify-between text-gray-400 sm:px-8 sm:py-8 px-5 py-5 min-w-[350px] sm:min-w-2xl'>
+    <div className='flex justify-between text-gray-400 min-w-[350px] sm:min-w-2xl'>
         <div>
             <span className='font-semibold text-xl'>BAINS</span>
         </div>
