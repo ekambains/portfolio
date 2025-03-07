@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -14,9 +17,15 @@ const Intro = () => {
             <p className='text-2xl font-bold tracking-wider'><span className='text-white'>Hey, I'm Ekampreet.</span> I am a Software Engineer and a Freelancer.</p>
           </div>
           <div className='flex sm:flex-row flex-col mt-6 gap-4 text-xl'>
-            <Link href={`https://www.twitter.com/ekam_bains_`}>Twitter</Link>
-            <Link href={`https://www.linkedin.com/ekambains`}>LinkedIn</Link>
-            <Link href={`https://www.github.com/ekambains`}>Github</Link>
+            <Link href={`https://www.twitter.com/ekam_bains_`} className='flex flex-row items-center gap-1'>
+              <FaXTwitter className='size-5 text-white' /> Twitter
+            </Link>
+            <Link href={`https://www.linkedin.com/ekambains`} className='flex flex-row items-center gap-1'>
+              <FaLinkedin className='size-5 text-white' /> LinkedIn
+            </Link>
+            <Link href={`https://www.github.com/ekambains`} className='flex flex-row items-center gap-1'>
+              <FaGithub className='size-5 text-white' /> Github
+            </Link>
           </div>
         </div>
     </div>
