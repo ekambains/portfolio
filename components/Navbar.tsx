@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
     <div className='flex justify-between text-gray-400 min-w-[350px] sm:min-w-2xl'>
         <div>
-            <span className='font-semibold text-xl hover:cursor-pointer'>BAINS</span>
+            <span className='font-semibold text-xl hover:cursor-pointer tracking-widest'>BAINS</span>
         </div>
         <div className='sm:flex sm:justify-between sm:items-center gap-8 hidden'>
             <Link href={`/about`}>

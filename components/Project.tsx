@@ -1,12 +1,20 @@
 import React from 'react'
 
-const Project = () => {
+interface ProjectProps {
+  title: string;
+  stack: string;
+  img: string;
+  src: string;
+  description: string;
+}
+
+const Project: React.FC<ProjectProps> = ({ title, stack, src, img, description }) => {
   return (
-    <div className=''>
-        <h1>Title</h1>
-        <h2>Tech Stack: Typescript, React, Express.js, Node.js, MongoDB</h2>
-        <p>Description</p>
-        <a href=""><img src='https://www.placeholder.com/50x50' /></a>
+    <div className='text-gray-400'>
+        <a href={src}><h1 className='py-2 text-xl font-bold text-white'>{title}</h1></a>
+        <h2 className='py-2 text-lg'>Tech Stack: {stack}</h2>
+        <a href={src} className='py-2'><img src={img} /></a>
+        <p className='py-2 text-lg'>{description}</p>
     </div>
   )
 }
