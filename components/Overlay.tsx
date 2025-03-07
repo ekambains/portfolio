@@ -10,8 +10,8 @@ const Overlay = () => {
       <Link href={`/about`}>
         <span>About</span>
       </Link>
-      <Link href={`/projects`}>
-        <span>Projects</span>
+      <Link href={`/contact`}>
+        <span>Contact</span>
       </Link>
     </div>
   )

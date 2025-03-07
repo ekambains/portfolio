@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ekampreet Singh Bains",
   description: "Portfolio of Ekampreet Singh Bains, Software Developer",
+  icons: {
+    icon: "/favicon.png"
+  }
 };
 
 export default function RootLayout({
