@@ -20,7 +20,7 @@ const Intro = () => {
             <Link href={`https://www.twitter.com/ekam_bains_`} className='flex flex-row items-center gap-1'>
               <FaXTwitter className='size-5 text-white' /> Twitter
             </Link>
-            <Link href={`https://www.linkedin.com/ekambains`} className='flex flex-row items-center gap-1'>
+            <Link href={`https://www.linkedin.com/in/ekambains`} className='flex flex-row items-center gap-1'>
               <FaLinkedin className='size-5 text-white' /> LinkedIn
             </Link>
             <Link href={`https://www.github.com/ekambains`} className='flex flex-row items-center gap-1'>

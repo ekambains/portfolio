@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -9,10 +10,10 @@ const Footer = () => {
         <div>
             <span>&copy; Bains</span>
         </div>
-        <div className='flex items-center gap-4'>
-            <span><FaXTwitter /></span>
-            <span><FaLinkedin /></span>
-            <span><FaGithub /></span>
+        <div className='flex items-center gap-4 text-2xl'>
+            <Link href={`https://www.twitter.com/ekam_bains_`}><FaXTwitter /></Link>
+            <Link href={`https://www.linkedin.com/in/ekambains`}><FaLinkedin /></Link>
+            <Link href={`https://www.github.com/ekambains`}><FaGithub /></Link>
         </div>
     </div>
   )
