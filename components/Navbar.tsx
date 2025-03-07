@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Overlay from './Overlay';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
     const [overlay, setOverlay] = useState(false);
@@ -23,7 +24,9 @@ const Navbar = () => {
             </Link>
         </div>
         <div className='sm:hidden'>
-            <button onClick={sidebar}>Icon</button>
+            <button onClick={sidebar}>
+                {overlay ? (<XMarkIcon className='size-8' />) : (<Bars3Icon className='size-8' />)}
+            </button>
         </div>
     </div>
     {overlay && (<Overlay />)}

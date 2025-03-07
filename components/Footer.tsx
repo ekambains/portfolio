@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex justify-between w-full'>
+    <div className='flex justify-between w-full py-4'>
         <div>
             <span>&copy; Bains</span>
         </div>
