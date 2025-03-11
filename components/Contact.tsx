@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,14 +7,14 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value
     });
   };
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -41,7 +41,7 @@ const Contact = () => {
   }
 
   const [confirm, setConfirm] = useState(false);
-  const confirmation = (e: any) => {
+  const confirmation = () => {
     setConfirm(prevConfirm => !prevConfirm);
     const timer = setTimeout(() => {
       setConfirm(prevConfirm => !prevConfirm);

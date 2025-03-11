@@ -14,7 +14,7 @@ const Intro = () => {
         </div>
         <div className='flex flex-col text-gray-400'>
           <div>
-            <p className='text-2xl font-bold tracking-wider'><Link href={`/about`}><span className='text-white hover:text-blue-500'>Hey, I'm Ekampreet.</span></Link> I am a Software Engineer and a Freelancer.</p>
+            <p className='text-2xl font-bold tracking-wider'><Link href={`/about`}><span className='text-white hover:text-blue-500'>Hey, I&apos;m Ekampreet.</span></Link> I am a Software Engineer and a Freelancer.</p>
           </div>
           <div className='flex sm:flex-row flex-col mt-6 gap-4 text-xl'>
             <Link href={`https://www.twitter.com/ekam_bains_`} className='flex flex-row items-center gap-1 hover:text-white'>
