@@ -24,9 +24,9 @@ const Contact = () => {
         },
         body: JSON.stringify({
             access_key: "e33141c5-aa36-45fc-887d-4b6ab49aaf43",
-            name: e.target.name.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
         }),
     });
     const result = await response.json();
