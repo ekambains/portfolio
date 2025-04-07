@@ -6,7 +6,7 @@ const Projects = () => {
     <div className='mt-[10px] sm:mt-[50px] py-4'>
         <h1 className='text-2xl tracking-widest font-bold py-2 text-gray-400'>PROJECTS</h1>
 
-        <Project title='That Hood Barber' stack='Typescript, Nextjs, Aceternity UI' img='hood.png'
+        <Project title='That Hood Barber' stack='Typescript, Nextjs, Aceternity UI' img='/hood.png'
         src='https://thathoodbarber.com'
         description='Built using Nextjs and Aceternity UI for a smooth user experience with seemless booking using calendly. Increased profits by 70% also bringing in 200% more traffic than usual for the barber shop.' />
 
