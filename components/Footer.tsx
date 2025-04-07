@@ -11,9 +11,9 @@ const Footer = () => {
             <span>&copy; Bains</span>
         </div>
         <div className='flex items-center gap-4 text-2xl'>
-            <Link href={`https://www.twitter.com/ekam_bains_`}><FaXTwitter /></Link>
-            <Link href={`https://www.linkedin.com/in/ekambains`}><FaLinkedin /></Link>
-            <Link href={`https://www.github.com/ekambains`}><FaGithub /></Link>
+            <Link href={`https://www.twitter.com/ekam_bains_`} target='_blank'><FaXTwitter /></Link>
+            <Link href={`https://www.linkedin.com/in/ekambains`} target='_blank'><FaLinkedin /></Link>
+            <Link href={`https://www.github.com/ekambains`} target='_blank'><FaGithub /></Link>
         </div>
     </div>
   )

@@ -18,13 +18,13 @@ const Intro = () => {
             <p className='text-2xl font-bold tracking-wider'><Link href={`/about`}><span className='text-white hover:text-blue-500'>Hey, I&apos;m Ekampreet.</span></Link> I am a Software Engineer and a Freelancer.</p>
           </div>
           <div className='flex sm:flex-row flex-col mt-6 gap-4 text-xl'>
-            <Link href={`https://www.twitter.com/ekam_bains_`} className='flex flex-row items-center gap-1 hover:text-white'>
+            <Link href={`https://www.twitter.com/ekam_bains_`} target='_blank' className='flex flex-row items-center gap-1 hover:text-white'>
               <FaXTwitter className='size-5' /> Twitter
             </Link>
-            <Link href={`https://www.linkedin.com/in/ekambains`} className='flex flex-row items-center gap-1 hover:text-blue-600'>
+            <Link href={`https://www.linkedin.com/in/ekambains`} target='_blank' className='flex flex-row items-center gap-1 hover:text-blue-600'>
               <FaLinkedin className='size-5' /> LinkedIn
             </Link>
-            <Link href={`https://www.github.com/ekambains`} className='flex flex-row items-center gap-1 hover:text-purple-500'>
+            <Link href={`https://www.github.com/ekambains`} target='_blank' className='flex flex-row items-center gap-1 hover:text-purple-500'>
               <FaGithub className='size-5' /> Github
             </Link>
           </div>
