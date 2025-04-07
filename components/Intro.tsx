@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -8,8 +9,8 @@ const Intro = () => {
   return (
     <div className='flex flex-col items-center sm:flex-row py-8 mt-[50px] gap-6'>
         <div className="p-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full">
-          <div className="w-36 h-36 rounded-full overflow-hidden">
-            <img src="/saitama.png" alt="Profile Picture" className="w-full h-full object-cover" />
+          <div className="w-36 h-36 rounded-full overflow-hidden relative">
+            <Image src="/saitama.png" alt="Profile Picture" className="w-full h-full object-cover" fill />
           </div>
         </div>
         <div className='flex flex-col text-gray-400'>
