@@ -1,13 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-
-interface ProjectProps {
-  title: string;
-  stack: string;
-  img: string;
-  src: string;
-  description: string;
-}
+import { ProjectProps } from '@/lib/definitions';
 
 const Project: React.FC<ProjectProps> = ({ title, stack, src, img, description }) => {
   return (
